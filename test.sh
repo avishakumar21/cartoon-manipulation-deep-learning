@@ -1,0 +1,16 @@
+python test.py \
+	--batchSize 1 \
+	--nThreads 1 \
+	--name deepfillv2 \
+	--dataset_mode valedge \
+	--val_image_dir ./datasets/celebsketch/images \
+	--val_edge_dir ./datasets/celebsketch/edges \
+	--val_mask_dir ./datasets/celebsketch/masks \
+	--val_image_list ./datasets/celebsketch.txt \
+	--val_image_postfix .png \
+	--val_mask_postfix .png \
+	--model inpaintc \
+	--netG deepfillc \
+	--use_cam \
+        --which_epoch epoch410_step3420000 \
+	--output_dir ./results \
